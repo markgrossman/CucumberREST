@@ -9,9 +9,9 @@ def return_json(file)
 	
 	json.gsub!(/\n/, " ").gsub(/ /,'')
 	
-	json = JSON.parse(json, :max_nesting => false)
+	json = JSON.parse(json)
 	
-	json.to_json(:max_nesting => false)
+	json.to_json()
 end
 
 get '/example' do
