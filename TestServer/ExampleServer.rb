@@ -17,3 +17,10 @@ end
 get '/example' do
   return_json("Responses/Example.json")
 end
+
+post "/hello" do
+	data = JSON.parse( request.body.read.to_s )
+	puts data
+	response = {"Hello"=>data['name']}
+	return response.to_json
+end
