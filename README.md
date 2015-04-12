@@ -14,3 +14,5 @@ Sample cucumber tests for a mock REST service
   2. From the terminal, navigate to the cloned folder and run 'bundle install' to install the required gems
   3. Start the sinatra server by navigating to the TestServer folder and run 'ruby ExampleServer.rb'
   4. In another terminal window, navigate to the CucumberTests folder and run 'cucumber' to run the sample tests
+
+  
